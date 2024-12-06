@@ -26,3 +26,9 @@
 - AI
 
 ## Rule
+- 미정
+  
+## Reference
+
+- [tech-interview-for-developer](https://github.com/gyoogle/tech-interview-for-developer?tab=readme-ov-file#tech-interview-for-developer)
+- [네이버 부스트코스](https://www.boostcourse.org/opencourse)
