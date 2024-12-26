@@ -147,3 +147,46 @@
 13. 동시성과 병렬성의 차이는?
     - 동시성은 여러 프로세스가 동시에 실행되는 것처럼 보이는 상태로, 시분할을 통해 구현할 수 있음. 그러나 동시에 실행되는 것처럼 보이는 것이지 실제 프로세스는 번갈아가면서 실행됨
     - 병렬성은 실제로 여러 프로세스가 동시에 실행되는 것임. 멀티코어 환경이 필요함
+
+## CPU Scheduling
+
+1. CPU Scheduling이란?
+   - CPU를 쓰기 위해 많은 프로세스들이 Ready queue에서 대기하고 있습니다. 이 중 어떤 프로세스에게 CPU를 사용할 수 있도록 할지 결정하는 것을 CPU Scheduling 이라고 합니다.
+
+    1. CPU Scheduling의 종류
+        - 총 7가지의 종류가 있습니다.
+        1. FCFS (First-Come First-Served)
+            - 먼저 온 프로세스부터 CPU를 제공하는 방식입니다.
+        2. SJF (Shortest-Job-First)
+            - 프로세스의 사용 시간이 짧은 프로세스부터 CPU를 할당하는 방식입니다.
+        3. SRTF (Shortest-Remaining-Time-First)
+            - SJF에서 preemitive 방식으로 할당할 경우를 뜻합니다.
+        4. Priority Scheduling
+            - 우선순위가 높은 프로세스에게 CPU를 할당합니다. 
+        5. Round Robin
+            - 실제 CPU 스케줄링에서 가장 많이 사용하는 방법으로, timer를 사용하여 일정 시간이 만료되면 인터럽트를 사용하여 CPU를 반납하도록 하는 방식입니다.
+        6. Multilevel Queue
+            - ready queue를 여러 개로 분할하여 프로세스의 종류에 따라 다른 큐에 위치하도록 하는 방식입니다.
+        8. Multilevel Feedback Queue
+            - 프로세스가 다른 큐로 이동이 가능하며, 각각의 큐에 대한 우선순위를 정하는 기준이 있습니다.
+
+2. CPU의 성능 척도에 무엇이 있는가?
+   1. CPU utilization (이용률)
+        - 전체 시간 중 CPU가 놀지 않고 일한 비율
+   2. Throughput (처리량)
+        - 단위 시간 당 CPU의 처리량
+   3. Turnaround time (소요시간, 반환시간)
+        - CPU 사용 시간 + CPU waiting time
+   4. Waiting time (대기 시간)
+      - 프로세스의 CPU 대기 시간 총 합
+   5. Response time (응답 시간)
+        - 프로세스가 CPU를 사용할 때 최초의 기다린 시간
+
+3. preemption과 non-preemption의 차이점은?
+   - Nonpreemptive
+     - 일단 CPU를 사용 중일 경우 해당 CPU burst가 완료될 때까지 반납하지 않습니다.
+   - Preemptive
+     - 현재 수행중인 프로세스보다 더 짧은 burst time을 가진 프로세스가 도착하면 CPU 강제반납합니다.
+
+4. Convoy Effect란?
+   FCFS 방식에서 CPU 이용시간이 긴 프로세스 뒤에 이용시간이 짧은 프로세스가 오는 경우를 의미합니다.
