@@ -21,22 +21,24 @@
 |Content|Date|Done|
 |:---:|:---:|:---:|
 |[Computer Architecture](./Computer%20Architecture/)|2024.12.14|✅|
-|[Operating System 1]()|2024.12.19|-|
-|[Operating System 2]()|2024.12.26|-|
-|[Network 1]()|2025.01.02|-|
-|[Network 2]()|2025.01.09|-|
-|[Data Structure]()|2025.01.16|-|
-|[Database 1]()|2025.01.23|-|
-|[Database 2]()|2025.01.30|-|
-|[Software Engineering]()|2025.02.06|-|
-|[Design Pattern]()|2025.02.13|-|
-|[Web]()|2025.02.20|-|
-|[AI]()|2025.02.27|-|
+|[Operating System 1](./Operating%20System/)|2024.12.20|✅|
+|[Operating System 2](./Operating%20System/)|2024.12.26|✅|
+|[Operating System 3](./Operating%20System/)|2025.01.02|-|
+|[Operating System 4](./Operating%20System/)|2025.01.09|-|
+|[Network 1]()|2025.01.16|-|
+|[Network 2]()|2025.01.23|-|
+|[Data Structure]()|2025.01.30|-|
+|[Database 1]()|22025.02.06|-|
+|[Database 2]()|2025.02.13|-|
+|[Software Engineering]()|2025.02.20|-|
+|[Design Pattern]()|2025.02.27|-|
+|[Web]()|2025.03.06|-|
+|[AI]()|2025.03.13|-|
 
 
 ## Rule
 
-> 📌 본 규칙은 스터디의 원활한 운영과 구성원 간의 협력을 위해 만들어졌습니다. 스터디 참여 시 본 규칙에 동의한 것으로 간주됩니다.
+> 📌 본 규칙은 스터디의 원활한 운영과 구성원 간의 협력을 위해 만들어졌습니다. <Br/> 스터디 참여 시 본 규칙에 동의한 것으로 간주됩니다.
 
 1. 결석 규정
     - 결석 사유

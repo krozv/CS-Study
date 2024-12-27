@@ -153,6 +153,7 @@
 ### Multilevel Feedback Queue
 - 프로세스가 다른 큐로 이동 가능
 - 각각의 큐에 대한 우선순위를 정하는 기준(파라미터)는 다양함
+- aging: 주기적으로 우선순위가 최상단인 큐로 이동
 
 ### Multiple-Processor Scheduling
 - CPU가 여러 개인 경우
