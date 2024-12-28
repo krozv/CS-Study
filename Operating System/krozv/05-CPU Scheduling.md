@@ -13,7 +13,10 @@
     - [RR (Round Robin)](#rr-round-robin)
     - [Multilevel Queue](#multilevel-queue)
     - [Multilevel Feedback Queue](#multilevel-feedback-queue)
-    - [Multiple-Processor Scheduling](#multiple-processor-scheduling)
+  - [Multiple-Processor Scheduling](#multiple-processor-scheduling)
+  - [Real-Time Scheduling](#real-time-scheduling)
+  - [Thread Scheduling](#thread-scheduling)
+  - [Algorithm Evaluation](#algorithm-evaluation)
 
 ## CPU and I/O Bursts in Program Execution
 - 사람하고 인터렉션하는 프로그램일 경우 CPU와 I/O를 번갈아 씀
@@ -155,6 +158,48 @@
 - 각각의 큐에 대한 우선순위를 정하는 기준(파라미터)는 다양함
 - aging: 주기적으로 우선순위가 최상단인 큐로 이동
 
-### Multiple-Processor Scheduling
+## Multiple-Processor Scheduling
 - CPU가 여러 개인 경우
-- Homogeneous processor
+- Homogeneous processor인 경우
+  - queue에 한 줄로 세워서 각 프로세서가 알아서 꺼낼 수 있도록 함
+  - 반드시 특정 프로세서에서 수행되어야 하는 프로세스가 있는 경우에는 문제가 복잡해짐
+- Loading sharing
+  - 일부 프로세서에 job이 몰리지 않도록 부하를 적절히 공유하는 메커니즘 필요
+  - 별개의 큐 vs 공동 큐
+- Symmetric Multiprocessing (SMP)
+  - 각 프로세서가 각자 알아서 스케줄링 결정
+  - 여러 CPU가 대등하게 일을 함. 각 CPU들이 알아서 스케줄링을 할 수 있도록 함
+- Asymmetric multiprocessing
+  - 하나의 프로세서가 시스템 데이터의 접근과 공유을 책임지고 나머지 프로세서는 거기에 따름
+
+## Real-Time Scheduling
+- Hard real-time systems
+  - deadline을 어길 수 없음
+  - Hard real-time task는 정해진 시간 안에 반드시 끝내도록 스케줄링해야 함
+- Soft real-time computing
+  - 일반 프로세스에 비해 높은 Priority를 갖도록 해야 함
+  - 동영상 스트리밍
+
+## Thread Scheduling
+- Local Scheduling
+  - User level thread의 경우, 프로세서 내부에서 어느 스레드에게 cpu를 줄 지 결정하는 방식
+  - 운영체제가 스레드의 존재를 모름
+  - 사용자 수준의 thread library에 의해 어떤 thread를 스케줄할지 결정
+- Global Scheduling
+  - Kernel level thread의 경우
+  - 운영체제가 스레드의 존재를 앎
+  - 운영체제가 직접 cpu scheduling
+  - 커널의 단기 스케줄러가 어떤 thread를 스케줄할지 결정
+
+## Algorithm Evaluation
+- Queueing models
+  - 이론적인 계산
+  - 확률 분포로 주어지는 arrival rate와 service rate 등을 통해 각종 performance index 값을 계산
+  - arrival rate: 얼마나 빠른 빈도로 도착하는지
+  - service rate: 단위 시간당 얼마나 일을 하는지
+- Implementation & Measurement
+  - 실제 시스템에 알고리즘을 구현하여 실제 작업에 대해서 성능을 측정 및 비교
+- Simulation
+  - 알고리즘을 모의 프로그램으로 작성 후, trace를 입력으로 하여 결과 비교
+  - trace: 시뮬레이션의 input이 되는 Data, 신빙성이 있어야 함
+  - 시뮬레이션을 할 경우, 실제 프로그램에서 trace를 추출하여 쓰는 경우도 있음
