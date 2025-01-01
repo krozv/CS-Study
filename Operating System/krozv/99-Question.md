@@ -192,3 +192,34 @@
    FCFS 방식에서 CPU 이용시간이 긴 프로세스 뒤에 이용시간이 짧은 프로세스가 오는 경우를 의미합니다.
 
 5. round robin은 CPU 성능 척도 중 무엇을 극대화 시킨 것인가?
+   Response time을 극대화시킴
+
+### 병행 제어
+
+1. Race Condition과 Critical Section이란?
+
+2. 운영체제에서 기아란?
+
+3. 운영체제에서 에이징이란?
+
+4. Mutex와 Semaphore란?
+
+5. 스풀링이란?
+
+6. SpinLock이란?
+
+### 데드락
+
+1. DeadLock이란?
+
+   a. 교착 상태의 4가지 필요 조건은?
+
+   b. 교착 상태 해결 방법은?
+
+2. Banker's algorithm이란?
+
+3. '식사하는 철학자 문제'란?
+
+   a. DeadLock이 어떨 때 발생하는지
+
+   b. 이를 해결하기 위한 방법
