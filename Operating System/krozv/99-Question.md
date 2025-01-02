@@ -192,3 +192,62 @@
    FCFS 방식에서 CPU 이용시간이 긴 프로세스 뒤에 이용시간이 짧은 프로세스가 오는 경우를 의미합니다.
 
 5. round robin은 CPU 성능 척도 중 무엇을 극대화 시킨 것인가?
+   
+   Response time을 극대화시킴
+
+### 병행 제어
+
+1. Race Condition과 Critical Section이란?
+
+    - race condition이란 두 개 이상의 프로세스가 shared data를 사용할 경우, 순서에 따라 결과값에 영향을 줄 수 있는 상태를 의미
+    - critical section이란 synchronization에서 둘 이상의 프로세스가 동시에 접근해서는 안되는 코드를 의미함
+
+2. 운영체제에서 기아란? (Starvation)
+
+    - 프로세스가 자원을 할당받지 못해 작업을 진행하지 못하는 상태
+
+3. 운영체제에서 에이징이란?
+- 낮은 우선 순위를 가진 프로세스가 일정 시간이 경과함에 따라 우선순위를 점진적으로 높여주는 기법. starvation을 방지하기 위해 사용함
+
+4. Mutex와 Semaphore란?
+    - Mutex: mutual exclusion을 위해 사용함. 특정 자원에 대해서 단일 프로세스의 접근만 허용하기 위해 사용하며, locked, unlocked 형태로 사용함
+    - Semaphore: critical section에 대한 프로세스의 접근을 제어하기 위해 사용하는 추상 자료형
+
+5. 스풀링이란?
+- 주변 장치가 데이터를 처리할 준비가 될 때까지 데이터를 임시로 저장하는 기술
+
+6. SpinLock이란?
+- busy-waiting이라고도 함. 다른 프로세스가 lock를 해제할 때까지 대기 상태를 유지하는 것
+
+### 데드락
+
+1. DeadLock이란?
+    - 프로세스들이 서로가 가진 자원을 기다리며 block된 상태
+
+   a. 교착 상태의 4가지 필요 조건은?
+   - mutual exclusion
+   - no preemption
+   - hold and wait
+   - circular wait
+
+   b. 교착 상태 해결 방법은?
+   - deadlock prevention
+   - deadlock avoidance
+   - deadlock detection and recovery
+   - deadlock ignorance
+
+2. Banker's algorithm이란?
+    - 각 프로세스가 필요한 최대 자원을 미리 계산하여, 프로세스에 자원을 할당하기 전에 Safe state인지 계산한다. 안전하지 않으면 자원을 할당하지 않아 교착 상태를 방지할 수 있음
+
+3. '식사하는 철학자 문제'란?
+   - 동시성 문제
+
+   a. DeadLock이 어떨 때 발생하는지
+
+    - 철학자가 양쪽 젓가락을 동시에 사용
+    - 모든 철학자가 한쪽 젓가락을 잡고 다른쪽 젓가락 대기
+
+   b. 이를 해결하기 위한 방법
+    - 4명만 동시에 자리에 앉을 수 있도록 함
+    - 젓가락 2개를 모두 잡을 수 있을 때에만 젓가락을 집을 수 있도록 함
+    - 짝수 철학자는 왼쪽 젓가락부터 집도록
