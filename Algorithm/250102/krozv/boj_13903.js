@@ -37,6 +37,7 @@ function solution() {
 
     for (let j = 0; j < c; j++){
         if (arr[0][j] === 1) {
+            // 처음에 큐에 한 번에 넣고 시작해보기.
             const time = bfs([0, j], r, c, delta, arr, minTime);
             if (time !== -1)
                 minTime = Math.min(minTime, time);
@@ -57,7 +58,7 @@ function bfs(start, r, c, delta, arr, minTime) {
 
         const key = `${x}:${y}`;
         if (visited.has(key)) continue;
-        visited.add(key);
+        
 
         if (time >= minTime) continue;
 
@@ -66,6 +67,7 @@ function bfs(start, r, c, delta, arr, minTime) {
 
             if (0 <= nx && nx < r && 0 <= ny && ny < c && arr[nx][ny] === 1) {
                 queue.push([nx, ny, time + 1]);
+                visited.add(key);
             }
         }
     }
