@@ -69,7 +69,6 @@
       - 자원 할당 그래프에서의 사이클이 곧 데드락을 의미
     - resource type 당 multiple instance인 경우
       - Banker's algorithm과 유사한 방법 활용
-    - ㅈ
 - Deadlock Ignorance
   - deadlock을 시스템이 책임지지 않음
   - UNIX를 포함한 대부분의 OS가 채택

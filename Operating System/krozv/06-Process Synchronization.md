@@ -188,12 +188,14 @@ typedef struct
 ### Deadlock
 - 둘 이상의 프로세스가 서로 상대방에 의해 충족될 수 있는 이벤트를 무한히 기다리는 현상
 - ![fig5](./img/06-Fig5.png)
+
 ### Starvation
 - indefinite blocking
 - 프로세스가 suspend된 이유에 해당하는 세마포어 큐에서 빠져나갈 수 없는 현상
 
 ## Classical Problems of Synchronization
 - 동기화에서 발생하는 문제들
+
 ### Bounded-Buffer Problem (Producer-Consumer Problem)
 - 프로세스의 종류
   - producer: 데이터를 만들어서 Buffer에 집어넣음
@@ -267,8 +269,8 @@ V(mutex);
 ### Dining-Philosophers Problem
 - 데드락 발생 가능 (모든 철학자가 동시에 왼쪽 젓가락을 집은 경우)
 - Solved
-  - 4명의 철학자만이 테이블에 동시에 앉을 수 있도록 함
-  - 젓가락 2개를 모두 잡을 수 있을 때에만 젓가락을 집을 수 있도록 함
+  - 4명의 철학자만이 테이블에 동시에 앉을 수 있도록 함 (circular wait)
+  - 젓가락 2개를 모두 잡을 수 있을 때에만 젓가락을 집을 수 있도록 함 (hold and wait)
   - 짝수 철학자는 왼쪽 젓가락부터 집도록
 
 ## Monitor
