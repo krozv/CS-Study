@@ -23,17 +23,18 @@
 |[Computer Architecture](./Computer%20Architecture/)|2024.12.14|✅|
 |[Operating System 1](./Operating%20System/)|2024.12.20|✅|
 |[Operating System 2](./Operating%20System/)|2024.12.26|✅|
-|[Operating System 3](./Operating%20System/)|2025.01.02|-|
-|[Operating System 4](./Operating%20System/)|2025.01.09|-|
-|[Network 1]()|2025.01.16|-|
-|[Network 2]()|2025.01.23|-|
-|[Data Structure]()|2025.01.30|-|
-|[Database 1]()|22025.02.06|-|
-|[Database 2]()|2025.02.13|-|
-|[Software Engineering]()|2025.02.20|-|
-|[Design Pattern]()|2025.02.27|-|
-|[Web]()|2025.03.06|-|
-|[AI]()|2025.03.13|-|
+|[Operating System 3](./Operating%20System/)|2025.01.02|✅|
+|[Operating System 4](./Operating%20System/)|2025.01.09|✅|
+|[Network 1](./Network/)|2025.01.16|-|
+|[Network 2](./Network/)|2025.01.23|-|
+|[Network 3](./Network/)|2025.01.30|-|
+|[Data Structure]()|2025.02.06|-|
+|[Database 1]()|22025.02.13|-|
+|[Database 2]()|2025.02.20|-|
+|[Software Engineering]()|2025.02.27|-|
+|[Design Pattern]()|2025.03.06|-|
+|[Web]()|2025.03.13|-|
+|[AI]()|2025.03.20|-|
 
 
 ## Rule
@@ -72,4 +73,5 @@
 
 - [tech-interview-for-developer](https://github.com/gyoogle/tech-interview-for-developer?tab=readme-ov-file#tech-interview-for-developer)
 - [운영체제 강의](http://www.kocw.net/home/cview.do?cid=4b9cd4c7178db077)
+- [네트워크 강의](https://youtube.com/playlist?list=PLVsNizTWUw7HfOCgvlfHIDPPo3TE-2iQM&si=o4U_-7te0o7oCrmA)
 - [네이버 부스트코스](https://www.boostcourse.org/opencourse)
