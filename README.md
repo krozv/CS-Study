@@ -25,10 +25,10 @@
 |[Operating System 2](./Operating%20System/)|2024.12.26|✅|
 |[Operating System 3](./Operating%20System/)|2025.01.02|✅|
 |[Operating System 4](./Operating%20System/)|2025.01.09|✅|
-|[Network 1](./Network/)|2025.01.16|-|
-|[Network 2](./Network/)|2025.01.23|-|
-|[Network 3](./Network/)|2025.01.30|-|
-|[Data Structure]()|2025.02.06|-|
+|[Network 1](./Network/)|2025.01.16|✅|
+|[Network 2](./Network/)|2025.01.23|✅|
+|[Network 3](./Network/)|2025.01.30|✅|
+|[Data Structure]()|2025.02.06|✅|
 |[Database 1]()|22025.02.13|-|
 |[Database 2]()|2025.02.20|-|
 |[Software Engineering]()|2025.02.27|-|
